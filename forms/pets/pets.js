@@ -2,15 +2,24 @@ var petNames = ["Darcy", "Jack", "Jerry", "Marty", "Vito", "Vinny", "Riley", "Sa
 var withMarmaduke = [ ]
 var withMarmaduke = petNames.slice()
 withMarmaduke.push("Marmaduke");
+petNames.shift()
+alert("Removing the first element of petNames array, \n petNames array now contains: " + petNames);
+petNames.unshift("Barney")
+petNames.push("Ted","Fred","Jed","Ned","Ed","Zed")
+stringPets = ["Bob","Sam","Andy"]
+console.log(stringPets.join());
+alert("stringPets contains: " + stringPets);
+petNames.unshift("Agnes")
+alert("current petNames array include: " + petNames);
 
 let action = prompt("please pick one of these actions: (1 ,2, 3.... to 7)  \n 1. remove Vinny \n 2. remove Marty \n 3. add Nancy to the front of the array \n 4. add your name to the end of the array \n 5. array index of Riley \n 6. array index of Cindy \n 7. show the 'withMarmaduke' array data");
 
 if (action == 1) {
-  petNames.splice(5,1)
+  petNames.splice(6,1)
   alert("The Action taken was: Remove Vinny \n The remaining data are: \n" + petNames);
 } 
   else if (action == 2) {
-  petNames.splice(3,1)
+  petNames.splice(4,1)
   alert("The Action taken was: Remove Marty \n The remaining data are: \n" + petNames);
 } 
   else if (action == 3) {
@@ -34,3 +43,6 @@ if (action == 1) {
 else {
   alert("please pick an action!")
 }
+
+
+
